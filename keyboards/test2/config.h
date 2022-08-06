@@ -3,8 +3,8 @@
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0xFEED
-#define PRODUCT_ID      0x6060
+#define VENDOR_ID       0x1269
+#define PRODUCT_ID      0x1269
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    mk
 #define PRODUCT         klavesnicka
@@ -41,15 +41,24 @@
 #define NO_ACTION_FUNCTION
 
 /* underglow */
-#define RGB_DI_PIN D3
-#define RGBLIGHT_ANIMATIONS
-#define RGBLIGHT_SPLIT
-#define RGBLED_NUM 7
 
-//#define RGBLED_SPLIT 7
-#define RGBLIGHT_HUE_STEP 8
-#define RGBLIGHT_SAT_STEP 8
-#define RGBLIGHT_VAL_STEP 8
+#define RGB_DI_PIN D3
+#define DRIVER_LED_TOTAL 14
+#define RGB_MATRIX_SPLIT {7,7}
+
+#define RGB_MATRIX_ALPHAS_MODS
+#define ENABLE_RGB_MATRIX_GRADIENT_UP_DOWN
+#define ENABLE_RGB_MATRIX_GRADIENT_LEFT_RIGHT
+#define ENABLE_RGB_MATRIX_BREATHING
+
+#define ENABLE_RGB_MATRIX_CYCLE_LEFT_RIGHT
+#define RGB_MATRIX_CYCLE_UP_DOWN
+#define RGB_MATRIX_CYCLE_OUT_IN
+#define RGB_MATRIX_CYCLE_SPIRAL
+#define RGB_MATRIX_CYCLE_PINWHEEL
+#define RGB_MATRIX_RAINBOW_MOVING_CHEVRON
+
+#define RGB_MATRIX_SLEEP
 
 // firmware size optimalizations
 

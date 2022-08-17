@@ -7,7 +7,7 @@
 #define PRODUCT_ID      0x1269
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    mk
-#define PRODUCT         klavesnicka
+#define PRODUCT         makak
 
 #define MASTER_RIGHT
 
@@ -28,7 +28,7 @@
 #define ENCODERS_PAD_B { F4 }
 #define ENCODERS_PAD_A_RIGHT { F4 }
 #define ENCODERS_PAD_B_RIGHT { F5 }
-#define ENCODER_RESOLUTION 2
+#define ENCODER_RESOLUTION 4
 
 #define TAP_CODE_DELAY 10
 

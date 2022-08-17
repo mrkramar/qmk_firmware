@@ -1,7 +1,5 @@
-# MCU name
-MCU = atmega32u4
 
-# Bootloader selection
+MCU = atmega32u4
 BOOTLOADER = caterina
 
 SPLIT_KEYBOARD = yes
@@ -11,12 +9,9 @@ ENCODER_ENABLE = yes
 OLED_ENABLE = yes
 OLED_DRIVER = SSD1306
 
-
-
 RGB_MATRIX_ENABLE = yes
 RGB_MATRIX_DRIVER = WS2812
 
-# RGBLIGHT_ENABLE = yes
 WPM_ENABLE = yes
 SLEEP_LED_ENABLE = no  
 

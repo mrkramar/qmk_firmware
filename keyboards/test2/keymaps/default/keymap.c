@@ -53,9 +53,9 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
         switch (get_highest_layer(layer_state)) {
             case _QWERTY:
                 if (clockwise) {
-                    tap_code(KC_DOWN);
+                    tap_code(KC_VOLU);
                 } else {
-                    tap_code(KC_UP);
+                    tap_code(KC_VOLD);
                 }
                 break;
             case _RAISE:
@@ -82,12 +82,6 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
                     tap_code(KC_LEFT);
                 }
                 break;
-        }
-
-        if (clockwise) {
-            tap_code(KC_VOLU);
-        } else {
-            tap_code(KC_VOLD);
         }
 
     } else if (index == 1) {
